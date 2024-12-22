@@ -1,7 +1,10 @@
+
+@use "../mixins" as m;
+
 .hero-area {
   padding: 300px 0 200px;
   position: relative;
-  @include tablet {
+  @include m.tablet {
     padding: 250px 0 150px;
     overflow: hidden;
   }

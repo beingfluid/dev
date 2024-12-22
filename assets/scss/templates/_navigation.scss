@@ -1,23 +1,26 @@
+@use "../variables";
+@use "../mixins" as m;
+
 .navigation{
   padding: 40px 130px;
   transition: .3s ease;
   &.nav-bg {
-    background-color: $primary-color;
+    background-color: variables.$primary-color;
     padding: 15px 100px;
-    @include desktop {
+    @include m.desktop {
       padding: 15px 20px;
     }
   }
-  @include desktop {
+  @include m.desktop {
     padding: 20px;
-    background: $primary-color;
+    background: variables.$primary-color;
   }
 }
 
 .navbar{
   .nav-item{
     .nav-link{
-      font-family: $secondary-font;
+      font-family: variables.$secondary-font;
       text-transform: uppercase;
       padding: 15px;
     }
@@ -28,5 +31,5 @@
 }
 
 .navbar-dark .navbar-nav .nav-link{
-  color: $white;
+  color: variables.$white;
 }

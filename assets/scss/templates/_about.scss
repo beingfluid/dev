@@ -1,3 +1,5 @@
+@use "mixins" as m;
+
 .page-title-alt{
   padding: 350px 0 70px;
 }
@@ -8,7 +10,7 @@
 
 .drag-lg-top{
   margin-top: -230px;
-  @include desktop {
+  @include m.desktop {
     margin-top: 0;
   }
 }
